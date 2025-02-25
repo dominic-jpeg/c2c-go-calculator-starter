@@ -23,7 +23,7 @@ To use this project, follow these steps:
      go run main.go
      ```
 
-   - Alternatively, open the `hello.go` file in the editor and click the play button at the top-right corner.
+   - Alternatively, open the `main.go` file in the editor and click the play button at the top-right corner.
 
 ## Key Features
 
