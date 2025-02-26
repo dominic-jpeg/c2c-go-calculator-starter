@@ -14,7 +14,10 @@ func multi(a int, b int) int {
 	return a * b
 }
 
-//1- create a division function (div) with 2 integer parameters and a float return
+// 1- Create a division function (div) with 2 integer parameters and a float return
+func div(a int, b int) float64 {
+	return float64(a) / float64(b)
+}
 
 func goCal(firstNum int, secondNum int) {
 	fmt.Println(firstNum, "+", secondNum, "=", plus(firstNum, secondNum))
@@ -22,7 +25,7 @@ func goCal(firstNum int, secondNum int) {
 	fmt.Println(firstNum, "*", secondNum, "=", multi(firstNum, secondNum))
 
 	if secondNum == 0 {
-		fmt.Println("not divisible by zero.")
+		fmt.Println("Not divisible by zero.")
 	} else {
 		fmt.Println(firstNum, "/", secondNum, "=", div(firstNum, secondNum))
 	}
@@ -40,7 +43,10 @@ func main() {
 	fmt.Print("Enter the first number: ")
 	fmt.Scanf("%d", &firstNum)
 
-	//2- ask the user to enter the second number and store the value in "secondNum"
+	// 2- Ask the user to enter the second number and store the value in "secondNum"
+	fmt.Print("Enter the second number: ")
+	fmt.Scanf("%d", &secondNum)
 
-	//3- Call the "GoCal" function with the proper parameters
+	// 3- Call the "goCal" function with the proper parameters
+	goCal(firstNum, secondNum)
 }
